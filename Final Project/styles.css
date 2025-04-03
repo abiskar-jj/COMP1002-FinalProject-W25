@@ -1,0 +1,317 @@
+/* Updated Body Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    color: #000000;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Improved Header Navigation */
+header {
+    background: url('images/background1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+
+main {
+    background: url('images/mainbg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 1rem;
+    Width: 750;
+    height: 200;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Enhanced Header Content */
+.header-content {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: min(150px, 20vw);
+    filter: sepia(100%);
+}
+
+/* Improved Featured Section */
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.storefront {
+    width: min(60%, 500px);
+    border: 5px solid #ffffff;
+    flex: 1 1 300px;
+}
+
+.featured-text {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+/* Responsive Media Grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-item iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* Improved Footer */
+footer {
+    background: url('images/footerbg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    position: static;
+    height: auto;
+}
+
+/* Enhanced Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .featured {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .storefront {
+        width: 100%;
+    }
+
+    .media-grid {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .featured-text h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* For the about us page */
+/* Founders Grid Styles */
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.founder-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Circular Image Container */
+.founder-card img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fills circle */
+    border: 4px solid #2d2821; /* Border color */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 auto 1.5rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.founder-card:hover img {
+    transform: scale(1.05);
+}
+
+.founder-card h3 {
+    margin-bottom: 0.5rem;
+    color: #2d2821;
+    font-size: 1.4rem;
+}
+
+.founder-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .founders-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .founder-card img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* For the product page */
+/* Products Page Styles */
+.products-page {
+    background: #faf6f0;
+}
+
+.product-collection {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border: 1px solid #e0d7cc;
+}
+
+.product-media {
+    position: relative;
+}
+
+.product-media img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #2d2821;
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #2d2821;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 1.8rem;
+    color: #c53d13;
+    font-weight: bold;
+}
+
+.stock {
+    color: #666;
+    font-style: italic;
+}
+
+.cta-button {
+    background: #2d2821;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-media img {
+        height: 300px;
+    }
+}
